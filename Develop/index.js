@@ -11,44 +11,50 @@ const questions = [
     },
     {
       type: "input",
-      message: "What are the sections?",
-      name: "section",
+      message: "Please provide a brief description of your project.",
+      name: "decription",
     },
     {
         type: "input",
-        message: "Table of Content?",
-        name: "lang",
+        message: "What is included in your Table of Content?",
+        name: "tableOfContent",
     },
     {
         type: "input",
-        message: "Installation?",
+        message: "Describe the steps required to install your project.",
         name: "installation",
     },
     {
         type: "input",
-        message: "Usage?",
+        message: "Provide instructions and examples of your project in use.",
         name: "usage",
     },
     {
-        type: "input",
-        message: "License?",
+        type: "list",
+        message: "Choose a license for your project",
+        choices: ['MIT'],
         name: "license",
     },
     {
         type: "input",
-        message: "Contributing?",
+        message: "Provide guidelines on how other developers can contribute to your project.",
         name: "contributing",
     },
     {
         type: "input",
-        message: "Tests?",
+        message: "Provide any tests written for your project.",
         name: "tests",
     },
     {
         type: "input",
-        message: "Questions?",
-        name: "questions",
-      },
+        message: "What is your gitHub URL?",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "What is your email?",
+        name: "email",
+    },
   ]
 
 // title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
