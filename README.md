@@ -22,10 +22,12 @@
 
   ## Usage
   Generate a readMe file using a single line in GitBash
+  
+  Walkthrough video: https://watch.screencastify.com/v/uUzkQSHEQsdeDW7TKewI
 
   ## License
   MIT
-https://opensource.org/licenses/MIT
+  https://opensource.org/licenses/MIT
 
   ## Contributors
   BCS
@@ -34,6 +36,6 @@ https://opensource.org/licenses/MIT
   N/A
 
   ## Questions
-  If you have any questions regarding this repo, please contact me at  teetee@test.com or check out my other repos at [teeteathao](https://github.com/undefined).
+  If you have any questions regarding this repo, please contact me at  teeteathao@gmail.com or check out my other repos at [teeteathao](https://github.com/teeteathao).
  
 
