@@ -1,7 +1,7 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateReadMe = require("./utils/generateReadMe");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // Array of questions for user input
 const questions = [
@@ -66,18 +66,18 @@ function writeToFile(fileName, data) {
     console.log(data)
     }
     )}
-    
+
 // TODO: Create a function to initialize app
 function init() { 
-    inquirer.promptUser(questions)
-// Use writeFileSync method to use promises instead of a callback function
+    inquirer
+    .prompt(questions)
     .then((answers) => {
-    const readMe = generateReadMe(answers)
-    writeToFile('README.md', readme, (err) => { 
-         console.log('Successfully wrote to READ.me')
-    .catch((err) => console.error(err));
+    const genreadMe = generateMarkdown(answers)
+    writeToFile('README.md', genreadMe)
+        //  console.log('Successfully wrote to READ.me')
+    
     })
-})
 }
+
 // Function call to initialize app
 init();
