@@ -33,12 +33,12 @@ const questions = [
     {
         type: "list",
         message: "Choose a license for your project",
-        choices: ['MIT', 'None'],
+        choices: ['MIT', 'Apache 2.0', 'None'],
         name: "license",
     },
     {
         type: "input",
-        message: "Provide guidelines on how other developers can contribute to your project.",
+        message: "Provide any contributors to your project.",
         name: "contributing",
     },
     {
@@ -61,8 +61,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (error) =>{
-    if(error) throw error;
+    fs.writeFile(fileName, data, (err) =>{
+    if(err) throw err;
     console.log(data)
     }
     )}
